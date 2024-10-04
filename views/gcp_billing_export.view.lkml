@@ -1,5 +1,5 @@
 view: gcp_billing_export {
-  sql_table_name: `gcp_billing.Carvana_Billing_Export` ;;
+  sql_table_name: `bi-eng-internal.billing_export_sample.Billing_Export` ;;
 
   dimension_group: _partitiondate {
     type: time

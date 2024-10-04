@@ -1,4 +1,4 @@
-connection: "finops_prod"
+connection: "bi-eng-internal"
 
 # include all the views
 include: "/views/**/*.view.lkml"
@@ -13,8 +13,8 @@ persist_with: billing_dev_default_datagroup
 # gcp_billing_export_detailed
 
 
-explore: ds_carvana_billing_export_enriched {
-  sql_always_where: ${ds_carvana_billing_export_enriched.usage_start_date_pt_year} >= 2022 ;;
+explore: ds_billing_export_enriched {
+  sql_always_where: ${ds_billing_export_enriched.usage_start_date_pt_year} >= 2022 ;;
 }
 
 explore: alerting_gcp_anomaly_dashboard {
@@ -25,32 +25,32 @@ explore: alerting_gcp_anomaly_dashboard {
 explore: gcp_billing_export_detailed {
 
   # from: gcp_billing_export_resource_v1_015_c22_404796_5_ce9_d2
-  join: carvana_billing_export_detailed__tags {
+  join: billing_export_detailed__tags {
     view_label: "Tags"
     sql: LEFT JOIN UNNEST(${gcp_billing_export_detailed.tags}) as gcp_billing_export_resource_v1_015_c22_404796_5_ce9_d2__tags ;;
     relationship: one_to_many
   }
-  join: carvana_billing_export_detailed__labels {
+  join: billing_export_detailed__labels {
     view_label: "Labels"
     sql: LEFT JOIN UNNEST(${gcp_billing_export_detailed.labels}) as gcp_billing_export_resource_v1_015_c22_404796_5_ce9_d2__labels ;;
     relationship: one_to_many
   }
-  join: carvana_billing_export_detailed__credits {
+  join: billing_export_detailed__credits {
     view_label: "Credits"
     sql: LEFT JOIN UNNEST(${gcp_billing_export_detailed.credits}) as gcp_billing_export_resource_v1_015_c22_404796_5_ce9_d2__credits ;;
     relationship: one_to_many
   }
-  join: carvana_billing_export_detailed__system_labels {
+  join: billing_export_detailed__system_labels {
     view_label: "System Labels"
     sql: LEFT JOIN UNNEST(${gcp_billing_export_detailed.system_labels}) as gcp_billing_export_resource_v1_015_c22_404796_5_ce9_d2__system_labels ;;
     relationship: one_to_many
   }
-  join: carvana_billing_export_detailed__project__labels {
+  join: billing_export_detailed__project__labels {
     view_label: "Project Labels"
     sql: LEFT JOIN UNNEST(${gcp_billing_export_detailed.project__labels}) as gcp_billing_export_resource_v1_015_c22_404796_5_ce9_d2__project__labels ;;
     relationship: one_to_many
   }
-  join: carvana_billing_export_detailed__project__ancestors {
+  join: billing_export_detailed__project__ancestors {
     view_label: "Project Ancestors"
     sql: LEFT JOIN UNNEST(${gcp_billing_export_detailed.project__ancestors}) as gcp_billing_export_resource_v1_015_c22_404796_5_ce9_d2__project__ancestors ;;
     relationship: one_to_many

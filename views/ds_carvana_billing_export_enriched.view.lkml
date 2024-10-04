@@ -1,5 +1,5 @@
-view: ds_carvana_billing_export_enriched {
-  sql_table_name: `crv-fpa-finops-prd-2750.gcp_billing.ds_Carvana_Billing_Export_Enriched` ;;
+view: ds_billing_export_enriched {
+  sql_table_name: `bi-eng-internal.billing_export_sample.Billing_Export_Enriched` ;;
 
 
   parameter: cost_metric {

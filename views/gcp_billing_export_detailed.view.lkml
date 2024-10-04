@@ -1,5 +1,5 @@
 view: gcp_billing_export_detailed{
-  sql_table_name: `gcp_billing.carvana_billing_export_detailed` ;;
+  sql_table_name: `bi-eng-internal.billing_export_sample.billing_export_detailed` ;;
 
   dimension: key {
     type: string
@@ -352,7 +352,7 @@ view: gcp_billing_export_detailed{
 }
 
 
-view: carvana_billing_export_detailed__tags {
+view: billing_export_detailed__tags {
 
   dimension: gcp_billing_export_resource_v1_015_c22_404796_5_ce9_d2__tags {
     type: string
@@ -377,7 +377,7 @@ view: carvana_billing_export_detailed__tags {
   }
 }
 
-view: carvana_billing_export_detailed__labels {
+view: billing_export_detailed__labels {
 
   dimension: gcp_billing_export_resource_v1_015_c22_404796_5_ce9_d2__labels {
     type: string
@@ -394,7 +394,7 @@ view: carvana_billing_export_detailed__labels {
   }
 }
 
-view: carvana_billing_export_detailed__credits {
+view: billing_export_detailed__credits {
   drill_fields: [id]
 
   dimension: id {
@@ -425,7 +425,7 @@ view: carvana_billing_export_detailed__credits {
   }
 }
 
-view: carvana_billing_export_detailed__system_labels {
+view: billing_export_detailed__system_labels {
 
   dimension: gcp_billing_export_resource_v1_015_c22_404796_5_ce9_d2__system_labels {
     type: string
@@ -442,7 +442,7 @@ view: carvana_billing_export_detailed__system_labels {
   }
 }
 
-view: carvana_billing_export_detailed__project__labels {
+view: billing_export_detailed__project__labels {
 
   dimension: key {
     type: string
@@ -454,7 +454,7 @@ view: carvana_billing_export_detailed__project__labels {
   }
 }
 
-view: carvana_billing_export_detailed__project__ancestors {
+view: billing_export_detailed__project__ancestors {
 
   dimension: display_name {
     type: string

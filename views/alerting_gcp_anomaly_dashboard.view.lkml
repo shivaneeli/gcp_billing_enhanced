@@ -1,5 +1,5 @@
 view: alerting_gcp_anomaly_dashboard {
-  sql_table_name: `crv-fpa-finops-prd-2750.gcp_billing.alerting_gcp_anomaly_dashboard` ;;
+  sql_table_name: `bi-eng-internal.billing_export_sample.alerting_gcp_anomaly_dashboard` ;;
 
   dimension: adjusted_cost {
     type: number
