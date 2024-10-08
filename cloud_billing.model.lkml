@@ -2,7 +2,7 @@ connection: "bi-eng-internal"
 
 # include all the views
 include: "/views/**/*.view.lkml"
-include: "/dashboards/gcp_billing.dashboard"
+include: "/dashboards/*.dashboard"
 
 datagroup: billing_dev_default_datagroup {
   # sql_trigger: SELECT MAX(id) FROM etl_log;;

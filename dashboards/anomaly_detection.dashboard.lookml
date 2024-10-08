@@ -51,7 +51,7 @@
     hidden_pivots: {}
     defaults_version: 1
     listen:
-      Stddev Sensitivity (Enter a value between 0.0 and 3.0): alerting_gcp_anomaly_dashboard.stddev_sensitivity
+      Stddev Sensitivity (Enter a value between 0 and 3): alerting_gcp_anomaly_dashboard.stddev_sensitivity
       Usage Start Date: alerting_gcp_anomaly_dashboard.usage_start_date
       Project Name: alerting_gcp_anomaly_dashboard.project_name
       Service Description: alerting_gcp_anomaly_dashboard.service_description
@@ -127,7 +127,7 @@
     hidden_pivots: {}
     defaults_version: 1
     listen:
-      Stddev Sensitivity (Enter a value between 0.0 and 3.0): alerting_gcp_anomaly_dashboard.stddev_sensitivity
+      Stddev Sensitivity (Enter a value between 0 and 3): alerting_gcp_anomaly_dashboard.stddev_sensitivity
       Usage Start Date: alerting_gcp_anomaly_dashboard.usage_start_date
       Project Name: alerting_gcp_anomaly_dashboard.project_name
       Service Description: alerting_gcp_anomaly_dashboard.service_description
@@ -195,7 +195,7 @@
     hidden_pivots: {}
     defaults_version: 1
     listen:
-      Stddev Sensitivity (Enter a value between 0.0 and 3.0): alerting_gcp_anomaly_dashboard.stddev_sensitivity
+      Stddev Sensitivity (Enter a value between 0 and 3): alerting_gcp_anomaly_dashboard.stddev_sensitivity
       Usage Start Date: alerting_gcp_anomaly_dashboard.usage_start_date
       Project Name: alerting_gcp_anomaly_dashboard.project_name
       Service Description: alerting_gcp_anomaly_dashboard.service_description
@@ -276,7 +276,7 @@
     hidden_fields: []
     hidden_points_if_no: []
     listen:
-      Stddev Sensitivity (Enter a value between 0.0 and 3.0): alerting_gcp_anomaly_dashboard.stddev_sensitivity
+      Stddev Sensitivity (Enter a value between 0 and 3): alerting_gcp_anomaly_dashboard.stddev_sensitivity
       Usage Start Date: alerting_gcp_anomaly_dashboard.usage_start_date
       Project Name: alerting_gcp_anomaly_dashboard.project_name
       Service Description: alerting_gcp_anomaly_dashboard.service_description
@@ -301,8 +301,8 @@
     explore: alerting_gcp_anomaly_dashboard
     listens_to_filters: []
     field: alerting_gcp_anomaly_dashboard.usage_start_date
-  - name: Stddev Sensitivity (Enter a value between 0.0 and 3.0)
-    title: Stddev Sensitivity (Enter a value between 0.0 and 3.0)
+  - name: Stddev Sensitivity (Enter a value between 0 and 3)
+    title: Stddev Sensitivity (Enter a value between 0 and 3)
     type: field_filter
     default_value: '1.0'
     allow_multiple_values: true

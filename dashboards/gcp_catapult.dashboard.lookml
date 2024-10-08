@@ -74,9 +74,8 @@
     show_null_points: true
     interpolation: linear
     listen:
-      Service Description: ds_billing_export_enriched.service_descritpion
+      Service Description: ds_billing_export_enriched.service_description
       SKU Description: ds_billing_export_enriched.sku_description
-      Cost Metric: ds_billing_export_enriched.cost_metric
       Marketplace: ds_billing_export_enriched.marketplace_inclusion
     row: 27
     col: 0
@@ -133,10 +132,8 @@
     hidden_pivots: {}
     defaults_version: 1
     listen:
-      Service Description: ds_billing_export_enriched.service_descritpion
+      Service Description: ds_billing_export_enriched.service_description
       SKU Description: ds_billing_export_enriched.sku_description
-      Cost Metric: ds_billing_export_enriched.cost_metric
-      Usage Start Date Pt Date: ds_billing_export_enriched.usage_start_date_pt_date
       Marketplace: ds_billing_export_enriched.marketplace_inclusion
     row: 27
     col: 12
@@ -213,8 +210,7 @@
     hidden_pivots: {}
     listen:
       SKU Description: ds_billing_export_enriched.sku_description
-      Service Description: ds_billing_export_enriched.service_descritpion
-      Cost Metric: ds_billing_export_enriched.cost_metric
+      Service Description: ds_billing_export_enriched.service_description
       Current Month (Only Tables): ds_billing_export_enriched.Current_Month_Override
       Day of Month Start (Only Tables): ds_billing_export_enriched.day_of_month_start
       Day of Month End (Only Tables): ds_billing_export_enriched.day_of_month_end
@@ -305,8 +301,7 @@
     hidden_pivots: {}
     listen:
       SKU Description: ds_billing_export_enriched.sku_description
-      Service Description: ds_billing_export_enriched.service_descritpion
-      Cost Metric: ds_billing_export_enriched.cost_metric
+      Service Description: ds_billing_export_enriched.service_description
       Current Month (Only Tables): ds_billing_export_enriched.Current_Month_Override
       Day of Month Start (Only Tables): ds_billing_export_enriched.day_of_month_start
       Day of Month End (Only Tables): ds_billing_export_enriched.day_of_month_end
@@ -384,8 +379,7 @@
     hidden_pivots: {}
     listen:
       SKU Description: ds_billing_export_enriched.sku_description
-      Service Description: ds_billing_export_enriched.service_descritpion
-      Cost Metric: ds_billing_export_enriched.cost_metric
+      Service Description: ds_billing_export_enriched.service_description
       Current Month (Only Tables): ds_billing_export_enriched.Current_Month_Override
       Day of Month Start (Only Tables): ds_billing_export_enriched.day_of_month_start
       Day of Month End (Only Tables): ds_billing_export_enriched.day_of_month_end
@@ -407,7 +401,7 @@
         ds_billing_export_enriched.usage_start_date_pt_date: 30 days
         ds_billing_export_enriched.project_name: ''
         ds_billing_export_enriched.sku_description: ''
-        ds_billing_export_enriched.service_descritpion: ''
+        ds_billing_export_enriched.service_description: ''
       sorts: [ds_billing_export_enriched.total_cost_by_cost_metric desc]
       limit: 500
       column_limit: 10
@@ -448,7 +442,7 @@
         ds_billing_export_enriched.usage_start_date_pt_date: 30 days
         ds_billing_export_enriched.cost_metric: adjusted^_cost
         ds_billing_export_enriched.project_name: ''
-        ds_billing_export_enriched.service_descritpion: ''
+        ds_billing_export_enriched.service_description: ''
         ds_billing_export_enriched.sku_description: ''
       sorts: [ds_billing_export_enriched.total_cost_by_cost_metric desc]
       limit: 10
@@ -514,14 +508,10 @@
     column_limit: 10
     listen:
     - SKU Description: ds_billing_export_enriched.sku_description
-      Service Description: ds_billing_export_enriched.service_descritpion
-      Cost Metric: ds_billing_export_enriched.cost_metric
-      Usage Start Date Pt Date: ds_billing_export_enriched.usage_start_date_pt_date
+      Service Description: ds_billing_export_enriched.service_description
       Marketplace: ds_billing_export_enriched.marketplace_inclusion
     - SKU Description: ds_billing_export_enriched.sku_description
-      Service Description: ds_billing_export_enriched.service_descritpion
-      Cost Metric: ds_billing_export_enriched.cost_metric
-      Usage Start Date Pt Date: ds_billing_export_enriched.usage_start_date_pt_date
+      Service Description: ds_billing_export_enriched.service_description
       Marketplace: ds_billing_export_enriched.marketplace_inclusion
     row: 0
     col: 0
@@ -644,18 +634,14 @@
     hidden_fields: [q1_ds_billing_export_enriched.total_cost_by_cost_metric]
     hidden_pivots: {}
     type: looker_line
-    pivots: [ds_billing_export_enriched.service_descritpion, ds_billing_export_enriched.service_description]
+    pivots: [ds_billing_export_enriched.service_description, ds_billing_export_enriched.service_description]
     column_limit: 50
     listen:
     - SKU Description: ds_billing_export_enriched.sku_description
-      Service Description: ds_billing_export_enriched.service_descritpion
-      Cost Metric: ds_billing_export_enriched.cost_metric
-      Usage Start Date Pt Date: ds_billing_export_enriched.usage_start_date_pt_date
+      Service Description: ds_billing_export_enriched.service_description
       Marketplace: ds_billing_export_enriched.marketplace_inclusion
     - SKU Description: ds_billing_export_enriched.sku_description
-      Service Description: ds_billing_export_enriched.service_descritpion
-      Cost Metric: ds_billing_export_enriched.cost_metric
-      Usage Start Date Pt Date: ds_billing_export_enriched.usage_start_date_pt_date
+      Service Description: ds_billing_export_enriched.service_description
       Marketplace: ds_billing_export_enriched.marketplace_inclusion
     row: 8
     col: 0
@@ -674,7 +660,7 @@
         ds_billing_export_enriched.usage_start_date_pt_date: 30 days
         ds_billing_export_enriched.project_name: ''
         ds_billing_export_enriched.sku_description: ''
-        ds_billing_export_enriched.service_descritpion: ''
+        ds_billing_export_enriched.service_description: ''
       sorts: [ds_billing_export_enriched.total_cost_by_cost_metric desc]
       limit: 500
       column_limit: 10
@@ -715,7 +701,7 @@
         ds_billing_export_enriched.usage_start_date_pt_date: 30 days
         ds_billing_export_enriched.cost_metric: adjusted^_cost
         ds_billing_export_enriched.project_name: ''
-        ds_billing_export_enriched.service_descritpion: ''
+        ds_billing_export_enriched.service_description: ''
         ds_billing_export_enriched.sku_description: ''
       sorts: [ds_billing_export_enriched.total_cost_by_cost_metric desc]
       limit: 10
@@ -764,14 +750,10 @@
     column_limit: 10
     listen:
     - SKU Description: ds_billing_export_enriched.sku_description
-      Service Description: ds_billing_export_enriched.service_descritpion
-      Cost Metric: ds_billing_export_enriched.cost_metric
-      Usage Start Date Pt Date: ds_billing_export_enriched.usage_start_date_pt_date
+      Service Description: ds_billing_export_enriched.service_description
       Marketplace: ds_billing_export_enriched.marketplace_inclusion
     - SKU Description: ds_billing_export_enriched.sku_description
-      Service Description: ds_billing_export_enriched.service_descritpion
-      Cost Metric: ds_billing_export_enriched.cost_metric
-      Usage Start Date Pt Date: ds_billing_export_enriched.usage_start_date_pt_date
+      Service Description: ds_billing_export_enriched.service_description
       Marketplace: ds_billing_export_enriched.marketplace_inclusion
     row: 16
     col: 0
@@ -788,7 +770,7 @@
       filters:
         ds_billing_export_enriched.project_name: ''
         ds_billing_export_enriched.sku_description: ''
-        ds_billing_export_enriched.service_descritpion: ''
+        ds_billing_export_enriched.service_description: ''
         ds_billing_export_enriched.cost_metric: adjusted^_cost
       sorts: [ds_billing_export_enriched.total_cost_by_cost_metric desc]
       limit: 500
@@ -831,7 +813,7 @@
       filters:
         ds_billing_export_enriched.cost_metric: adjusted^_cost
         ds_billing_export_enriched.project_name: ''
-        ds_billing_export_enriched.service_descritpion: ''
+        ds_billing_export_enriched.service_description: ''
         ds_billing_export_enriched.sku_description: ''
       sorts: [ds_billing_export_enriched.total_cost_by_cost_metric desc 0]
       limit: 10
@@ -975,13 +957,11 @@
     column_limit: 50
     listen:
     - SKU Description: ds_billing_export_enriched.sku_description
-      Service Description: ds_billing_export_enriched.service_descritpion
-      Cost Metric: ds_billing_export_enriched.cost_metric
+      Service Description: ds_billing_export_enriched.service_description
       Current Month (Only Tables): ds_billing_export_enriched.Current_Month_Override
       Marketplace: ds_billing_export_enriched.marketplace_inclusion
     - SKU Description: ds_billing_export_enriched.sku_description
-      Service Description: ds_billing_export_enriched.service_descritpion
-      Cost Metric: ds_billing_export_enriched.cost_metric
+      Service Description: ds_billing_export_enriched.service_description
       Current Month (Only Tables): ds_billing_export_enriched.Current_Month_Override
       Marketplace: ds_billing_export_enriched.marketplace_inclusion
     row: 35
@@ -999,7 +979,7 @@
       filters:
         ds_billing_export_enriched.project_name: ''
         ds_billing_export_enriched.sku_description: ''
-        ds_billing_export_enriched.service_descritpion: ''
+        ds_billing_export_enriched.service_description: ''
         ds_billing_export_enriched.cost_metric: adjusted^_cost
       sorts: [ds_billing_export_enriched.total_cost_by_cost_metric desc]
       limit: 500
@@ -1042,7 +1022,7 @@
       filters:
         ds_billing_export_enriched.cost_metric: adjusted^_cost
         ds_billing_export_enriched.project_name: ''
-        ds_billing_export_enriched.service_descritpion: ''
+        ds_billing_export_enriched.service_description: ''
         ds_billing_export_enriched.sku_description: ''
       sorts: [ds_billing_export_enriched.total_cost_by_cost_metric desc 0]
       limit: 10
@@ -1186,13 +1166,11 @@
     column_limit: 50
     listen:
     - SKU Description: ds_billing_export_enriched.sku_description
-      Service Description: ds_billing_export_enriched.service_descritpion
-      Cost Metric: ds_billing_export_enriched.cost_metric
+      Service Description: ds_billing_export_enriched.service_description
       Current Month (Only Tables): ds_billing_export_enriched.Current_Month_Override
       Marketplace: ds_billing_export_enriched.marketplace_inclusion
     - SKU Description: ds_billing_export_enriched.sku_description
-      Service Description: ds_billing_export_enriched.service_descritpion
-      Cost Metric: ds_billing_export_enriched.cost_metric
+      Service Description: ds_billing_export_enriched.service_description
       Current Month (Only Tables): ds_billing_export_enriched.Current_Month_Override
       Marketplace: ds_billing_export_enriched.marketplace_inclusion
     row: 35
@@ -1210,7 +1188,7 @@
       filters:
         ds_billing_export_enriched.project_name: ''
         ds_billing_export_enriched.sku_description: ''
-        ds_billing_export_enriched.service_descritpion: ''
+        ds_billing_export_enriched.service_description: ''
         ds_billing_export_enriched.cost_metric: adjusted^_cost
       sorts: [ds_billing_export_enriched.total_cost_by_cost_metric desc]
       limit: 500
@@ -1253,7 +1231,7 @@
       filters:
         ds_billing_export_enriched.cost_metric: adjusted^_cost
         ds_billing_export_enriched.project_name: ''
-        ds_billing_export_enriched.service_descritpion: ''
+        ds_billing_export_enriched.service_description: ''
         ds_billing_export_enriched.sku_description: ''
       sorts: [ds_billing_export_enriched.total_cost_by_cost_metric desc 0]
       limit: 500
@@ -1660,13 +1638,11 @@
     column_limit: 50
     listen:
     - SKU Description: ds_billing_export_enriched.sku_description
-      Service Description: ds_billing_export_enriched.service_descritpion
-      Cost Metric: ds_billing_export_enriched.cost_metric
+      Service Description: ds_billing_export_enriched.service_description
       Current Month (Only Tables): ds_billing_export_enriched.Current_Month_Override
       Marketplace: ds_billing_export_enriched.marketplace_inclusion
     - SKU Description: ds_billing_export_enriched.sku_description
-      Service Description: ds_billing_export_enriched.service_descritpion
-      Cost Metric: ds_billing_export_enriched.cost_metric
+      Service Description: ds_billing_export_enriched.service_description
       Current Month (Only Tables): ds_billing_export_enriched.Current_Month_Override
       Marketplace: ds_billing_export_enriched.marketplace_inclusion
     row: 43

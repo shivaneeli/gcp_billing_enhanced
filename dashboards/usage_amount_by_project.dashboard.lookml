@@ -9,14 +9,14 @@
   - title: Total Usage Amount in Pricing Unit
     name: Total Usage Amount in Pricing Unit
     model: cloud_billing
-    explore: ds_carvana_billing_export_enriched
+    explore: ds_billing_export_enriched
     type: looker_grid
-    fields: [ds_carvana_billing_export_enriched.sku_description, ds_carvana_billing_export_enriched.invoice_month,
-      ds_carvana_billing_export_enriched.total_adjusted_cost]
-    pivots: [ds_carvana_billing_export_enriched.invoice_month]
+    fields: [ds_billing_export_enriched.sku_description, ds_billing_export_enriched.invoice_month,
+      ds_billing_export_enriched.total_adjusted_cost]
+    pivots: [ds_billing_export_enriched.invoice_month]
     filters:
-      ds_carvana_billing_export_enriched.usage_start_date_pt_month: 3 months
-    sorts: [ds_carvana_billing_export_enriched.invoice_month, ds_carvana_billing_export_enriched.total_adjusted_cost
+      ds_billing_export_enriched.usage_start_date_pt_month: 3 months
+    sorts: [ds_billing_export_enriched.invoice_month, ds_billing_export_enriched.total_adjusted_cost
         desc 0]
     limit: 500
     column_limit: 50
@@ -65,8 +65,8 @@
     minimum_column_width: 75
     column_order: []
     listen:
-      Project Name: ds_carvana_billing_export_enriched.project_name
-      SKU Description: ds_carvana_billing_export_enriched.sku_description
+      Project Name: ds_billing_export_enriched.project_name
+      SKU Description: ds_billing_export_enriched.sku_description
     row: 0
     col: 2
     width: 20
@@ -82,9 +82,9 @@
       type: tag_list
       display: popover
     model: cloud_billing
-    explore: ds_carvana_billing_export_enriched
+    explore: ds_billing_export_enriched
     listens_to_filters: []
-    field: ds_carvana_billing_export_enriched.project_name
+    field: ds_billing_export_enriched.project_name
   - name: SKU Description
     title: SKU Description
     type: field_filter
@@ -95,6 +95,6 @@
       type: tag_list
       display: popover
     model: cloud_billing
-    explore: ds_carvana_billing_export_enriched
+    explore: ds_billing_export_enriched
     listens_to_filters: []
-    field: ds_carvana_billing_export_enriched.sku_description
+    field: ds_billing_export_enriched.sku_description
