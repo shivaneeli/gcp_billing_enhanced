@@ -1,5 +1,5 @@
 view: ds_billing_export_enriched {
-  sql_table_name: `bi-eng-internal.billing_export_sample.Billing_Export_Enriched` ;;
+  sql_table_name: `bi-eng-internal.billing_export_sample.ds_Billing_Export_Enriched` ;;
 
 
   parameter: cost_metric {
